@@ -1,0 +1,40 @@
+create database faculdade;
+
+use faculdade;
+
+create table alunos(
+id_alunosint primary key auto_increment,
+rm_alunos int,
+nome_alunos varchar(200),
+email varchar(200),
+rg varchar(200),
+cpf varchar(200),
+celular varchar(200)
+
+
+);
+
+create table professores(
+id_professores int primary key auto_increment,
+nome_prof varchar(200),
+email varchar(200),
+rg varchar(200),
+cpf varchar(200),
+celular varchar(200)
+);
+
+create table curso(
+id_curso int primary key auto_increment,
+nome_curso varchar(200),
+periodo_curso varchar(200),
+qnt_mod int(1)
+
+);
+
+create table usuarios(
+id_user  int primary key auto_increment,
+usuario varchar(20),
+senha varchar(8)
+
+
+);
