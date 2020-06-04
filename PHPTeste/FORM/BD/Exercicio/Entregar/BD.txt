@@ -1,0 +1,10 @@
+create database escola;
+use escola;
+create table alunos(
+	rm int primary key auto_increment,
+    nome varchar(200),
+    idade int(3)
+
+);
+
+select * from alunos;
